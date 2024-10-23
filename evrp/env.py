@@ -211,7 +211,7 @@ class EVREnv(RL4COEnvBase):
 
         done = torch.logical_or(stopped, arrived)
 
-        print(done.shape)
+        # print(done.shape)
         # print(remaining_battery_sequence)
 
         td.update(
