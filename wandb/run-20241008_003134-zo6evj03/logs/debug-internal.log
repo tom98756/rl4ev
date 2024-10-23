@@ -1,0 +1,213 @@
+2024-10-08 00:31:34,716 INFO    StreamThr :28296 [internal.py:wandb_internal():85] W&B internal server running at pid: 28296, started at: 2024-10-08 00:31:34.715276
+2024-10-08 00:31:34,719 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status
+2024-10-08 00:31:34,721 INFO    WriterThread:28296 [datastore.py:open_for_write():87] open: .\wandb\run-20241008_003134-zo6evj03\run-zo6evj03.wandb
+2024-10-08 00:31:34,724 DEBUG   SenderThread:28296 [sender.py:send():379] send: header
+2024-10-08 00:31:34,724 DEBUG   SenderThread:28296 [sender.py:send():379] send: run
+2024-10-08 00:31:34,728 INFO    SenderThread:28296 [sender.py:_setup_resume():749] checking resume status for None/rl4co/zo6evj03
+2024-10-08 00:31:35,823 INFO    SenderThread:28296 [dir_watcher.py:__init__():211] watching files in: .\wandb\run-20241008_003134-zo6evj03\files
+2024-10-08 00:31:35,823 INFO    SenderThread:28296 [sender.py:_start_run_threads():1188] run started: zo6evj03 with start time 1728318694.716276
+2024-10-08 00:31:35,836 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: check_version
+2024-10-08 00:31:35,836 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: check_version
+2024-10-08 00:31:36,324 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: run_start
+2024-10-08 00:31:36,349 DEBUG   HandlerThread:28296 [system_info.py:__init__():26] System info init
+2024-10-08 00:31:36,349 DEBUG   HandlerThread:28296 [system_info.py:__init__():41] System info init done
+2024-10-08 00:31:36,349 INFO    HandlerThread:28296 [system_monitor.py:start():194] Starting system monitor
+2024-10-08 00:31:36,350 INFO    HandlerThread:28296 [system_monitor.py:probe():214] Collecting system info
+2024-10-08 00:31:36,350 INFO    SystemMonitor:28296 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-08 00:31:36,351 INFO    SystemMonitor:28296 [interfaces.py:start():188] Started cpu monitoring
+2024-10-08 00:31:36,358 INFO    SystemMonitor:28296 [interfaces.py:start():188] Started disk monitoring
+2024-10-08 00:31:36,359 INFO    SystemMonitor:28296 [interfaces.py:start():188] Started gpu monitoring
+2024-10-08 00:31:36,360 INFO    SystemMonitor:28296 [interfaces.py:start():188] Started memory monitoring
+2024-10-08 00:31:36,370 INFO    SystemMonitor:28296 [interfaces.py:start():188] Started network monitoring
+2024-10-08 00:31:36,383 DEBUG   HandlerThread:28296 [system_info.py:probe():152] Probing system
+2024-10-08 00:31:36,384 DEBUG   HandlerThread:28296 [system_info.py:probe():200] Probing system done
+2024-10-08 00:31:36,384 DEBUG   HandlerThread:28296 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.19', 'heartbeatAt': '2024-10-07T16:31:36.384696', 'startedAt': '2024-10-07T16:31:34.585096', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'D:\\rl4ev\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'CHINAMI-2CC6H5T', 'username': 'Administrator', 'executable': 'c:\\Users\\Administrator\\anaconda3\\envs\\RL4CO\\python.exe', 'cpu_count': 16, 'cpu_count_logical': 24, 'cpu_freq': {'current': 2100.0, 'min': 0.0, 'max': 2100.0}, 'cpu_freq_per_core': [{'current': 2100.0, 'min': 0.0, 'max': 2100.0}], 'disk': {'/': {'total': 953.8369140625, 'used': 22.4306640625}}, 'gpu': 'NVIDIA GeForce RTX 4060 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4060 Ti', 'memory_total': 8585740288}], 'memory': {'total': 15.674217224121094}}
+2024-10-08 00:31:36,384 INFO    HandlerThread:28296 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-08 00:31:36,384 INFO    HandlerThread:28296 [system_monitor.py:probe():227] Publishing system info
+2024-10-08 00:31:36,384 DEBUG   HandlerThread:28296 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-10-08 00:31:36,388 ERROR   HandlerThread:28296 [system_info.py:_save_conda():223] Error saving conda packages: [WinError 2] 系统找不到指定的文件。
+Traceback (most recent call last):
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\subprocess.py", line 1436, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+  File "c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydev_bundle\pydev_monkey.py", line 901, in new_CreateProcess
+    return getattr(_subprocess, original_name)(app_name, cmd_line, *args)
+FileNotFoundError: [WinError 2] 系统找不到指定的文件。
+2024-10-08 00:31:36,391 DEBUG   HandlerThread:28296 [system_info.py:_save_conda():224] Saving conda packages done
+2024-10-08 00:31:36,392 INFO    HandlerThread:28296 [system_monitor.py:probe():229] Finished publishing system info
+2024-10-08 00:31:36,396 DEBUG   SenderThread:28296 [sender.py:send():379] send: files
+2024-10-08 00:31:36,396 INFO    SenderThread:28296 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-10-08 00:31:36,765 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: python_packages
+2024-10-08 00:31:36,766 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: python_packages
+2024-10-08 00:31:36,768 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 00:31:36,770 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 00:31:36,772 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:36,842 INFO    Thread-17 :28296 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241008_003134-zo6evj03\files\wandb-metadata.json
+2024-10-08 00:31:36,842 INFO    Thread-17 :28296 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241008_003134-zo6evj03\files\requirements.txt
+2024-10-08 00:31:36,843 INFO    Thread-17 :28296 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241008_003134-zo6evj03\files\conda-environment.yaml
+2024-10-08 00:31:37,322 DEBUG   SenderThread:28296 [sender.py:send():379] send: telemetry
+2024-10-08 00:31:37,322 DEBUG   SenderThread:28296 [sender.py:send():379] send: telemetry
+2024-10-08 00:31:37,322 DEBUG   SenderThread:28296 [sender.py:send():379] send: metric
+2024-10-08 00:31:37,322 DEBUG   SenderThread:28296 [sender.py:send():379] send: telemetry
+2024-10-08 00:31:37,323 DEBUG   SenderThread:28296 [sender.py:send():379] send: metric
+2024-10-08 00:31:37,323 WARNING SenderThread:28296 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-10-08 00:31:37,585 INFO    wandb-upload_0:28296 [upload_job.py:push():130] Uploaded file C:\Users\Administrator\AppData\Local\Temp\tmpah8hzbh4wandb\sy79ci7y-wandb-metadata.json
+2024-10-08 00:31:37,782 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:37,845 INFO    Thread-17 :28296 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241008_003134-zo6evj03\files\output.log
+2024-10-08 00:31:38,795 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:39,810 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:40,377 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:31:40,820 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:41,836 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:42,848 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:43,861 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:44,852 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:45,819 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:31:45,864 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:46,879 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:47,893 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:48,884 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:49,886 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:50,823 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:31:50,901 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:51,773 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 00:31:51,774 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 00:31:51,912 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:52,923 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:53,926 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:54,938 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:55,944 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:56,085 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:31:56,958 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:57,964 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:58,973 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:31:59,984 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:00,999 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:01,812 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:02,014 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:03,027 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:04,036 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:05,048 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:06,058 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:06,796 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 00:32:06,797 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 00:32:07,070 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:07,071 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:08,061 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:08,170 INFO    Thread-17 :28296 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20241008_003134-zo6evj03\files\config.yaml
+2024-10-08 00:32:09,074 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:10,087 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:11,098 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:12,107 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:13,118 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:13,846 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:14,128 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:15,124 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:16,132 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:17,141 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:18,152 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:18,852 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:19,163 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:20,172 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:21,186 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:21,796 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 00:32:21,797 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 00:32:22,197 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:23,207 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:24,079 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:24,221 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:25,214 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:26,227 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:27,240 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:28,247 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:29,257 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:29,862 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:30,264 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:31,281 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:32,286 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:33,288 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:34,299 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:34,886 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:35,290 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:36,301 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:36,392 DEBUG   SystemMonitor:28296 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-10-08 00:32:36,393 DEBUG   SenderThread:28296 [sender.py:send():379] send: stats
+2024-10-08 00:32:36,798 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 00:32:36,798 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 00:32:37,310 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:38,319 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:39,329 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:40,138 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:40,338 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:41,348 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:42,364 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:43,373 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:44,385 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:45,394 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:45,903 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:46,387 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:47,393 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:48,383 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:49,391 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:50,398 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:50,913 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:51,410 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:51,799 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 00:32:51,799 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 00:32:52,417 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:53,426 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:54,437 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:55,447 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:56,167 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:32:56,464 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:57,469 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:58,478 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:32:59,488 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:00,502 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:01,500 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:01,889 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:33:02,513 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:03,522 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:04,537 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:05,551 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:06,407 DEBUG   SenderThread:28296 [sender.py:send():379] send: stats
+2024-10-08 00:33:06,559 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:06,792 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 00:33:06,793 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 00:33:07,052 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:33:07,565 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:08,558 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:09,567 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:10,577 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:11,587 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:12,596 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:12,920 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:33:13,589 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:14,602 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:15,611 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:16,620 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:17,628 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:17,939 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:33:18,621 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:19,635 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:20,647 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:21,662 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:21,794 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 00:33:21,794 DEBUG   SenderThread:28296 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 00:33:22,675 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:23,111 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:33:23,669 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:24,682 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:25,697 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:26,710 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:27,717 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:28,727 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:28,978 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 00:33:29,739 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:30,751 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 00:33:31,762 DEBUG   HandlerThread:28296 [handler.py:handle_request():158] handle_request: internal_messages

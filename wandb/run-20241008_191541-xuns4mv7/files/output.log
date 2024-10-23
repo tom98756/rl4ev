@@ -1,0 +1,6 @@
+val_file not set. Generating dataset instead
+test_file not set. Generating dataset instead
+D:\rl4co-main\rl4co-main\rl4co\models\nn\attention.py:128: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  out = self.sdpa_fn(
+c:\Users\78788\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydev_ipython\qt_loaders.py:115: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp

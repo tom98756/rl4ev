@@ -1,0 +1,141 @@
+2024-10-14 13:09:29,045 INFO    StreamThr :31076 [internal.py:wandb_internal():85] W&B internal server running at pid: 31076, started at: 2024-10-14 13:09:29.043386
+2024-10-14 13:09:29,053 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status
+2024-10-14 13:09:29,059 INFO    WriterThread:31076 [datastore.py:open_for_write():87] open: .\wandb\run-20241014_130928-4gv1hb1c\run-4gv1hb1c.wandb
+2024-10-14 13:09:29,065 DEBUG   SenderThread:31076 [sender.py:send():379] send: header
+2024-10-14 13:09:29,066 DEBUG   SenderThread:31076 [sender.py:send():379] send: run
+2024-10-14 13:09:29,073 INFO    SenderThread:31076 [sender.py:_setup_resume():749] checking resume status for None/rl4co/4gv1hb1c
+2024-10-14 13:09:31,226 INFO    SenderThread:31076 [dir_watcher.py:__init__():211] watching files in: .\wandb\run-20241014_130928-4gv1hb1c\files
+2024-10-14 13:09:31,227 INFO    SenderThread:31076 [sender.py:_start_run_threads():1188] run started: 4gv1hb1c with start time 1728882569.045382
+2024-10-14 13:09:31,248 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: check_version
+2024-10-14 13:09:31,248 DEBUG   SenderThread:31076 [sender.py:send_request():406] send_request: check_version
+2024-10-14 13:09:32,375 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: run_start
+2024-10-14 13:09:33,547 DEBUG   HandlerThread:31076 [system_info.py:__init__():26] System info init
+2024-10-14 13:09:33,547 DEBUG   HandlerThread:31076 [system_info.py:__init__():41] System info init done
+2024-10-14 13:09:33,547 INFO    HandlerThread:31076 [system_monitor.py:start():194] Starting system monitor
+2024-10-14 13:09:33,549 INFO    HandlerThread:31076 [system_monitor.py:probe():214] Collecting system info
+2024-10-14 13:09:33,550 INFO    SystemMonitor:31076 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-14 13:09:33,552 INFO    SystemMonitor:31076 [interfaces.py:start():188] Started cpu monitoring
+2024-10-14 13:09:33,558 INFO    SystemMonitor:31076 [interfaces.py:start():188] Started disk monitoring
+2024-10-14 13:09:33,562 INFO    SystemMonitor:31076 [interfaces.py:start():188] Started gpu monitoring
+2024-10-14 13:09:33,564 INFO    SystemMonitor:31076 [interfaces.py:start():188] Started memory monitoring
+2024-10-14 13:09:33,566 INFO    SystemMonitor:31076 [interfaces.py:start():188] Started network monitoring
+2024-10-14 13:09:33,597 DEBUG   HandlerThread:31076 [system_info.py:probe():152] Probing system
+2024-10-14 13:09:33,597 DEBUG   HandlerThread:31076 [system_info.py:probe():200] Probing system done
+2024-10-14 13:09:33,597 DEBUG   HandlerThread:31076 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.15', 'heartbeatAt': '2024-10-14T05:09:33.597109', 'startedAt': '2024-10-14T05:09:28.865918', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'E:\\rl4ev\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'DESKTOP-4UKOA1U', 'username': '78788', 'executable': 'd:\\py\\Anaconda3\\envs\\pytorch\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 6, 'cpu_freq': {'current': 2901.0, 'min': 0.0, 'max': 2901.0}, 'cpu_freq_per_core': [{'current': 2901.0, 'min': 0.0, 'max': 2901.0}], 'disk': {'/': {'total': 953.8369140625, 'used': 14.423583984375}}, 'gpu': 'NVIDIA GeForce GTX 1050 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1050 Ti', 'memory_total': 4294967296}], 'memory': {'total': 7.857707977294922}}
+2024-10-14 13:09:33,598 INFO    HandlerThread:31076 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-14 13:09:33,598 INFO    HandlerThread:31076 [system_monitor.py:probe():227] Publishing system info
+2024-10-14 13:09:33,598 DEBUG   HandlerThread:31076 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-10-14 13:09:33,625 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:33,625 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:34,281 INFO    Thread-17 :31076 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241014_130928-4gv1hb1c\files\conda-environment.yaml
+2024-10-14 13:09:35,921 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:35,922 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:38,206 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:38,207 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:40,519 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:40,519 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:42,807 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:42,807 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:45,112 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:45,113 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:47,401 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:47,402 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:48,641 ERROR   HandlerThread:31076 [system_info.py:_save_conda():223] Error saving conda packages: Command '['conda', 'env', 'export']' timed out after 15 seconds
+Traceback (most recent call last):
+  File "d:\py\Anaconda3\envs\pytorch\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "d:\py\Anaconda3\envs\pytorch\lib\subprocess.py", line 351, in call
+    return p.wait(timeout=timeout)
+  File "d:\py\Anaconda3\envs\pytorch\lib\subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "d:\py\Anaconda3\envs\pytorch\lib\subprocess.py", line 1473, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['conda', 'env', 'export']' timed out after 15 seconds
+2024-10-14 13:09:48,675 DEBUG   HandlerThread:31076 [system_info.py:_save_conda():224] Saving conda packages done
+2024-10-14 13:09:48,681 INFO    HandlerThread:31076 [system_monitor.py:probe():229] Finished publishing system info
+2024-10-14 13:09:48,694 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:09:48,694 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: keepalive
+2024-10-14 13:09:48,694 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:09:48,694 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: keepalive
+2024-10-14 13:09:48,694 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:09:48,695 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: keepalive
+2024-10-14 13:09:48,696 DEBUG   SenderThread:31076 [sender.py:send():379] send: files
+2024-10-14 13:09:48,696 INFO    SenderThread:31076 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-10-14 13:09:49,379 INFO    Thread-17 :31076 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241014_130928-4gv1hb1c\files\wandb-metadata.json
+2024-10-14 13:09:49,602 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:49,603 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:49,711 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:09:49,807 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: python_packages
+2024-10-14 13:09:49,808 DEBUG   SenderThread:31076 [sender.py:send_request():406] send_request: python_packages
+2024-10-14 13:09:49,813 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-14 13:09:49,814 DEBUG   SenderThread:31076 [sender.py:send_request():406] send_request: stop_status
+2024-10-14 13:09:49,823 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-14 13:09:50,283 DEBUG   SenderThread:31076 [sender.py:send():379] send: telemetry
+2024-10-14 13:09:50,284 DEBUG   SenderThread:31076 [sender.py:send():379] send: telemetry
+2024-10-14 13:09:50,284 DEBUG   SenderThread:31076 [sender.py:send():379] send: metric
+2024-10-14 13:09:50,285 DEBUG   SenderThread:31076 [sender.py:send():379] send: telemetry
+2024-10-14 13:09:50,285 DEBUG   SenderThread:31076 [sender.py:send():379] send: metric
+2024-10-14 13:09:50,285 WARNING SenderThread:31076 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-10-14 13:09:50,391 INFO    Thread-17 :31076 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241014_130928-4gv1hb1c\files\requirements.txt
+2024-10-14 13:09:50,392 INFO    Thread-17 :31076 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241014_130928-4gv1hb1c\files\output.log
+2024-10-14 13:09:51,146 INFO    wandb-upload_0:31076 [upload_job.py:push():130] Uploaded file C:\Users\78788\AppData\Local\Temp\tmpmgl0silfwandb\8c8my159-wandb-metadata.json
+2024-10-14 13:09:51,497 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-14 13:09:51,911 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:51,911 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:54,209 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:54,210 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:54,833 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:09:56,448 INFO    Thread-17 :31076 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20241014_130928-4gv1hb1c\files\conda-environment.yaml
+2024-10-14 13:09:56,503 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:56,504 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:58,787 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:58,787 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:09:59,863 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:10:00,483 INFO    Thread-17 :31076 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20241014_130928-4gv1hb1c\files\config.yaml
+2024-10-14 13:10:01,087 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:01,087 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:03,112 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:03,112 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:04,832 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-14 13:10:04,833 DEBUG   SenderThread:31076 [sender.py:send_request():406] send_request: stop_status
+2024-10-14 13:10:05,261 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:10:05,399 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:05,399 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:07,704 ERROR   gpu       :31076 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-10-14 13:10:07,715 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:07,716 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:10,013 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:10,013 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:10,882 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:10:12,332 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:12,333 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:14,639 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:14,639 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:15,895 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:10:16,938 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:16,938 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:19,233 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:19,234 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:19,837 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-14 13:10:19,837 DEBUG   SenderThread:31076 [sender.py:send_request():406] send_request: stop_status
+2024-10-14 13:10:21,242 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:10:21,534 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:21,535 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:23,830 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:23,831 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:26,138 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:26,139 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:26,894 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:10:28,443 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:28,444 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:30,746 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:30,747 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:31,915 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: status_report
+2024-10-14 13:10:33,061 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:33,062 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:33,578 DEBUG   SystemMonitor:31076 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-10-14 13:10:33,586 DEBUG   SenderThread:31076 [sender.py:send():379] send: stats
+2024-10-14 13:10:34,856 DEBUG   HandlerThread:31076 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-14 13:10:34,858 DEBUG   SenderThread:31076 [sender.py:send_request():406] send_request: stop_status
+2024-10-14 13:10:35,374 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-14 13:10:35,375 ERROR   gpu       :31076 [interfaces.py:monitor():142] Failed to sample metric: Not Supported

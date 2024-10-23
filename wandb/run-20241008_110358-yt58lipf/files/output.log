@@ -1,0 +1,47 @@
+c:\Users\78788\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydev_ipython\qt_loaders.py:115: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Backend QtAgg is interactive backend. Turning interactive mode on.
+Traceback (most recent call last):
+  File "d:\py\Anaconda3\envs\pytorch\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "d:\py\Anaconda3\envs\pytorch\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\78788\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\__main__.py", line 39, in <module>
+    cli.main()
+  File "c:\Users\78788\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy/..\debugpy\server\cli.py", line 430, in main
+    run()
+  File "c:\Users\78788\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy/..\debugpy\server\cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "c:\Users\78788\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "c:\Users\78788\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "c:\Users\78788\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "E:\rl4ev\train.py", line 66, in <module>
+    main()
+  File "E:\rl4ev\train.py", line 54, in main
+    trainer.fit(model)
+  File "D:\rl4co-main\rl4co-main\rl4co\utils\trainer.py", line 146, in fit
+    super().fit(
+  File "d:\py\Anaconda3\envs\pytorch\lib\site-packages\lightning\pytorch\trainer\trainer.py", line 543, in fit
+    call._call_and_handle_interrupt(
+  File "d:\py\Anaconda3\envs\pytorch\lib\site-packages\lightning\pytorch\trainer\call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "d:\py\Anaconda3\envs\pytorch\lib\site-packages\lightning\pytorch\trainer\trainer.py", line 579, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "d:\py\Anaconda3\envs\pytorch\lib\site-packages\lightning\pytorch\trainer\trainer.py", line 948, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+  File "d:\py\Anaconda3\envs\pytorch\lib\site-packages\lightning\pytorch\trainer\call.py", line 96, in _call_setup_hook
+    _call_lightning_module_hook(trainer, "setup", stage=fn)
+  File "d:\py\Anaconda3\envs\pytorch\lib\site-packages\lightning\pytorch\trainer\call.py", line 159, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "D:\rl4co-main\rl4co-main\rl4co\models\rl\common\base.py", line 148, in setup
+    self.env.dataset(self.data_cfg["train_data_size"], phase="train")
+  File "D:\rl4co-main\rl4co-main\rl4co\envs\common\base.py", line 246, in dataset
+    td = self.generator(batch_size)
+  File "D:\rl4co-main\rl4co-main\rl4co\envs\common\utils.py", line 27, in __call__
+    return self._generate(batch_size)
+  File "E:\rl4ev\generator\generator.py", line 143, in _generate
+    self.distance_matrix.fill_diagonal_(torch.inf)
+RuntimeError: all dimensions of input must be of equal length

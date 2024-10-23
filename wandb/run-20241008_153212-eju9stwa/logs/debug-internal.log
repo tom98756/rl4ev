@@ -1,0 +1,439 @@
+2024-10-08 15:32:13,225 INFO    StreamThr :5152 [internal.py:wandb_internal():85] W&B internal server running at pid: 5152, started at: 2024-10-08 15:32:13.223359
+2024-10-08 15:32:13,267 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status
+2024-10-08 15:32:13,271 INFO    WriterThread:5152 [datastore.py:open_for_write():87] open: .\wandb\run-20241008_153212-eju9stwa\run-eju9stwa.wandb
+2024-10-08 15:32:13,273 DEBUG   SenderThread:5152 [sender.py:send():379] send: header
+2024-10-08 15:32:13,273 DEBUG   SenderThread:5152 [sender.py:send():379] send: run
+2024-10-08 15:32:13,280 INFO    SenderThread:5152 [sender.py:_setup_resume():749] checking resume status for None/rl4co/eju9stwa
+2024-10-08 15:32:14,422 INFO    SenderThread:5152 [dir_watcher.py:__init__():211] watching files in: .\wandb\run-20241008_153212-eju9stwa\files
+2024-10-08 15:32:14,422 INFO    SenderThread:5152 [sender.py:_start_run_threads():1188] run started: eju9stwa with start time 1728372733.226358
+2024-10-08 15:32:14,453 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: check_version
+2024-10-08 15:32:14,454 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: check_version
+2024-10-08 15:32:15,224 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: run_start
+2024-10-08 15:32:16,398 DEBUG   HandlerThread:5152 [system_info.py:__init__():26] System info init
+2024-10-08 15:32:16,398 DEBUG   HandlerThread:5152 [system_info.py:__init__():41] System info init done
+2024-10-08 15:32:16,398 INFO    HandlerThread:5152 [system_monitor.py:start():194] Starting system monitor
+2024-10-08 15:32:16,400 INFO    HandlerThread:5152 [system_monitor.py:probe():214] Collecting system info
+2024-10-08 15:32:16,401 INFO    SystemMonitor:5152 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-08 15:32:16,403 INFO    SystemMonitor:5152 [interfaces.py:start():188] Started cpu monitoring
+2024-10-08 15:32:16,424 INFO    SystemMonitor:5152 [interfaces.py:start():188] Started disk monitoring
+2024-10-08 15:32:16,428 INFO    SystemMonitor:5152 [interfaces.py:start():188] Started gpu monitoring
+2024-10-08 15:32:16,430 INFO    SystemMonitor:5152 [interfaces.py:start():188] Started memory monitoring
+2024-10-08 15:32:16,434 INFO    SystemMonitor:5152 [interfaces.py:start():188] Started network monitoring
+2024-10-08 15:32:16,467 DEBUG   HandlerThread:5152 [system_info.py:probe():152] Probing system
+2024-10-08 15:32:16,467 DEBUG   HandlerThread:5152 [system_info.py:probe():200] Probing system done
+2024-10-08 15:32:16,467 DEBUG   HandlerThread:5152 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.15', 'heartbeatAt': '2024-10-08T07:32:16.467403', 'startedAt': '2024-10-08T07:32:12.989126', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'E:\\rl4ev\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'host': 'DESKTOP-4UKOA1U', 'username': '78788', 'executable': 'd:\\py\\Anaconda3\\envs\\pytorch\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 6, 'cpu_freq': {'current': 2901.0, 'min': 0.0, 'max': 2901.0}, 'cpu_freq_per_core': [{'current': 2901.0, 'min': 0.0, 'max': 2901.0}], 'disk': {'/': {'total': 953.8369140625, 'used': 35.0390625}}, 'gpu': 'NVIDIA GeForce GTX 1050 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1050 Ti', 'memory_total': 4294967296}], 'memory': {'total': 7.857707977294922}}
+2024-10-08 15:32:16,467 INFO    HandlerThread:5152 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-08 15:32:16,467 INFO    HandlerThread:5152 [system_monitor.py:probe():227] Publishing system info
+2024-10-08 15:32:16,467 DEBUG   HandlerThread:5152 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-10-08 15:32:16,482 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:16,482 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:17,472 INFO    Thread-17 :5152 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241008_153212-eju9stwa\files\conda-environment.yaml
+2024-10-08 15:32:18,778 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:18,779 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:21,092 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:21,092 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:23,387 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:23,387 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:25,687 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:25,688 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:27,989 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:27,990 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:30,297 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:30,297 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:31,492 ERROR   HandlerThread:5152 [system_info.py:_save_conda():223] Error saving conda packages: Command '['conda', 'env', 'export']' timed out after 15 seconds
+Traceback (most recent call last):
+  File "d:\py\Anaconda3\envs\pytorch\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "d:\py\Anaconda3\envs\pytorch\lib\subprocess.py", line 351, in call
+    return p.wait(timeout=timeout)
+  File "d:\py\Anaconda3\envs\pytorch\lib\subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "d:\py\Anaconda3\envs\pytorch\lib\subprocess.py", line 1473, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['conda', 'env', 'export']' timed out after 15 seconds
+2024-10-08 15:32:31,521 DEBUG   HandlerThread:5152 [system_info.py:_save_conda():224] Saving conda packages done
+2024-10-08 15:32:31,526 INFO    HandlerThread:5152 [system_monitor.py:probe():229] Finished publishing system info
+2024-10-08 15:32:31,539 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:32:31,539 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: keepalive
+2024-10-08 15:32:31,539 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:32:31,539 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: keepalive
+2024-10-08 15:32:31,539 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:32:31,539 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: keepalive
+2024-10-08 15:32:31,541 DEBUG   SenderThread:5152 [sender.py:send():379] send: files
+2024-10-08 15:32:31,541 INFO    SenderThread:5152 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-10-08 15:32:31,678 INFO    Thread-17 :5152 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241008_153212-eju9stwa\files\wandb-metadata.json
+2024-10-08 15:32:32,598 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:32,599 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:32,695 INFO    wandb-upload_0:5152 [upload_job.py:push():130] Uploaded file C:\Users\78788\AppData\Local\Temp\tmpmor4ogxbwandb\j20idfuo-wandb-metadata.json
+2024-10-08 15:32:33,745 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: python_packages
+2024-10-08 15:32:33,746 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: python_packages
+2024-10-08 15:32:33,750 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:32:33,751 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:32:33,760 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:34,040 DEBUG   SenderThread:5152 [sender.py:send():379] send: telemetry
+2024-10-08 15:32:34,041 DEBUG   SenderThread:5152 [sender.py:send():379] send: telemetry
+2024-10-08 15:32:34,041 DEBUG   SenderThread:5152 [sender.py:send():379] send: metric
+2024-10-08 15:32:34,041 DEBUG   SenderThread:5152 [sender.py:send():379] send: telemetry
+2024-10-08 15:32:34,041 DEBUG   SenderThread:5152 [sender.py:send():379] send: metric
+2024-10-08 15:32:34,041 WARNING SenderThread:5152 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-10-08 15:32:34,736 INFO    Thread-17 :5152 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241008_153212-eju9stwa\files\requirements.txt
+2024-10-08 15:32:34,986 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:35,019 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:35,019 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:35,048 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:32:35,996 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:37,095 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:37,324 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:37,325 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:37,767 INFO    Thread-17 :5152 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20241008_153212-eju9stwa\files\conda-environment.yaml
+2024-10-08 15:32:38,098 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:38,794 INFO    Thread-17 :5152 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20241008_153212-eju9stwa\files\output.log
+2024-10-08 15:32:39,104 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:39,627 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:39,628 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:40,100 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:40,526 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:32:41,106 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:41,944 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:41,945 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:42,108 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:43,119 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:44,108 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:44,244 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:44,244 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:45,118 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:45,789 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:32:46,119 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:46,552 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:46,553 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:46,901 INFO    Thread-17 :5152 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20241008_153212-eju9stwa\files\config.yaml
+2024-10-08 15:32:47,106 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:48,110 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:48,753 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:32:48,753 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:32:48,862 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:48,863 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:49,113 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:50,121 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:51,132 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:51,175 ERROR   gpu       :5152 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-10-08 15:32:51,186 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:51,186 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:52,079 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:32:52,141 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:53,158 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:53,483 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:53,483 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:54,168 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:55,170 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:55,792 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:55,792 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:56,198 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:57,193 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:57,819 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:32:58,176 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:58,176 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:32:58,198 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:32:59,192 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:00,203 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:00,490 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:00,491 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:01,212 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:02,220 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:02,805 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:02,806 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:03,194 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:03,225 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:03,764 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:33:03,765 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:33:04,233 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:05,118 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:05,118 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:05,242 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:06,250 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:07,266 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:07,426 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:07,427 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:08,209 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:08,272 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:09,280 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:09,740 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:09,740 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:10,300 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:11,321 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:12,081 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:12,082 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:12,329 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:13,222 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:13,333 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:14,342 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:14,769 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:14,769 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:15,503 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:16,444 DEBUG   SystemMonitor:5152 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-10-08 15:33:16,462 DEBUG   SenderThread:5152 [sender.py:send():379] send: stats
+2024-10-08 15:33:16,575 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:17,079 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:17,080 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:17,583 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:18,478 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:18,604 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:18,777 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:33:18,778 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:33:19,387 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:19,388 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:19,597 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:20,615 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:21,623 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:21,697 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:21,699 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:22,631 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:23,645 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:23,999 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:23,999 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:24,273 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:24,654 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:25,667 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:26,325 ERROR   gpu       :5152 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-10-08 15:33:26,336 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:26,337 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:26,668 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:27,687 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:28,662 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:28,663 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:28,677 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:29,284 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:29,705 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:30,692 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:30,990 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:30,990 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:31,727 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:33,021 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:33,300 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:33,300 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:33,874 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:33:33,875 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:33:34,034 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:34,304 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:35,064 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:35,599 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:35,599 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:36,151 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:37,141 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:37,914 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:37,915 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:38,150 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:39,149 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:39,307 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:40,164 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:40,229 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:40,229 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:41,170 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:42,185 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:42,530 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:42,531 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:43,191 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:44,194 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:44,848 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:44,849 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:45,205 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:45,312 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:46,210 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:46,462 DEBUG   SenderThread:5152 [sender.py:send():379] send: stats
+2024-10-08 15:33:47,198 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:47,198 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:47,215 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:48,227 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:48,871 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:33:48,871 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:33:49,231 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:49,515 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:49,515 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:50,239 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:50,317 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:51,247 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:51,827 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:51,828 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:52,256 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:53,263 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:54,122 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:54,122 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:54,271 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:55,287 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:55,333 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:33:56,303 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:56,423 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:56,424 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:57,310 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:58,316 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:33:58,756 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:58,756 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:33:59,330 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:00,337 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:00,338 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:01,074 ERROR   gpu       :5152 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-10-08 15:34:01,085 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:01,086 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:01,328 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:02,332 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:03,337 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:03,392 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:03,392 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:03,869 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:34:03,870 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:34:04,353 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:05,350 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:05,352 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:05,693 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:05,694 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:06,346 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:07,349 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:08,003 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:08,004 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:08,364 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:09,372 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:10,320 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:10,321 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:10,377 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:11,350 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:11,382 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:12,388 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:12,617 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:12,618 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:13,400 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:14,389 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:14,925 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:14,926 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:15,403 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:16,379 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:16,410 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:16,472 DEBUG   SenderThread:5152 [sender.py:send():379] send: stats
+2024-10-08 15:34:17,236 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:17,237 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:17,419 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:18,445 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:18,886 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:34:18,889 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:34:19,447 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:19,532 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:19,533 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:20,469 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:21,459 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:21,845 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:21,846 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:22,105 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:22,454 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:23,462 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:24,155 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:24,156 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:24,466 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:25,481 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:26,460 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:26,461 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:26,495 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:27,405 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:27,500 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:28,508 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:28,773 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:28,773 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:29,515 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:30,525 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:31,089 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:31,089 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:31,513 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:32,405 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:32,515 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:33,391 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:33,392 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:33,524 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:33,872 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:34:33,873 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:34:34,533 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:35,538 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:35,708 ERROR   gpu       :5152 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-10-08 15:34:35,720 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:35,720 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:36,551 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:37,407 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:37,564 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:38,037 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:38,037 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:38,571 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:39,574 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:40,343 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:40,344 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:40,585 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:41,597 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:42,423 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:42,611 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:42,642 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:42,642 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:43,620 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:44,620 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:44,960 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:44,961 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:45,621 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:46,476 DEBUG   SenderThread:5152 [sender.py:send():379] send: stats
+2024-10-08 15:34:46,631 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:47,273 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:47,273 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:47,478 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:47,635 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:48,624 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:48,890 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:34:48,892 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:34:49,657 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:49,658 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:49,659 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:50,674 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:51,676 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:51,952 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:51,952 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:52,685 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:53,434 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:53,702 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:54,261 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:54,261 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:54,711 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:55,718 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:56,558 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:56,558 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:56,724 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:57,728 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:58,434 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:34:58,733 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:34:58,874 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:58,875 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:34:59,750 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:00,759 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:01,183 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:01,183 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:01,761 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:02,767 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:03,442 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:35:03,488 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:03,489 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:03,777 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:03,903 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-08 15:35:03,903 DEBUG   SenderThread:5152 [sender.py:send_request():406] send_request: stop_status
+2024-10-08 15:35:04,783 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:05,787 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:05,787 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:05,793 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:06,806 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:07,811 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:08,109 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:08,110 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:08,469 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:35:08,818 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:09,823 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:10,430 ERROR   gpu       :5152 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-10-08 15:35:10,444 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:10,444 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:10,828 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:11,834 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:12,740 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:12,741 ERROR   gpu       :5152 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-10-08 15:35:12,841 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-08 15:35:13,488 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: status_report
+2024-10-08 15:35:13,847 DEBUG   HandlerThread:5152 [handler.py:handle_request():158] handle_request: internal_messages

@@ -1,0 +1,52 @@
+
+Backend tkagg is interactive backend. Turning interactive mode on.
+c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydev_ipython\matplotlibtools.py:55: MatplotlibDeprecationWarning: The interactive_bk attribute was deprecated in Matplotlib 3.9 and will be removed in 3.11. Use ``matplotlib.backends.backend_registry.list_builtin(matplotlib.backends.BackendFilter.INTERACTIVE)`` instead.
+  from matplotlib.rcsetup import interactive_bk, non_interactive_bk  # @UnresolvedImport
+c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydev_ipython\matplotlibtools.py:55: MatplotlibDeprecationWarning: The non_interactive_bk attribute was deprecated in Matplotlib 3.9 and will be removed in 3.11. Use ``matplotlib.backends.backend_registry.list_builtin(matplotlib.backends.BackendFilter.NON_INTERACTIVE)`` instead.
+  from matplotlib.rcsetup import interactive_bk, non_interactive_bk  # @UnresolvedImport
+Traceback (most recent call last):
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\__main__.py", line 39, in <module>
+    cli.main()
+  File "c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy/..\debugpy\server\cli.py", line 430, in main
+    run()
+  File "c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy/..\debugpy\server\cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "D:\rl4ev\train.py", line 66, in <module>
+    main()
+  File "D:\rl4ev\train.py", line 54, in main
+    trainer.fit(model)
+  File "C:\research_code\rl4co-main\rl4co\utils\trainer.py", line 146, in fit
+    super().fit(
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\site-packages\lightning\pytorch\trainer\trainer.py", line 543, in fit
+    call._call_and_handle_interrupt(
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\site-packages\lightning\pytorch\trainer\call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\site-packages\lightning\pytorch\trainer\trainer.py", line 579, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\site-packages\lightning\pytorch\trainer\trainer.py", line 948, in _run
+    call._call_setup_hook(self)  # allow user to set up LightningModule in accelerator environment
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\site-packages\lightning\pytorch\trainer\call.py", line 96, in _call_setup_hook
+    _call_lightning_module_hook(trainer, "setup", stage=fn)
+  File "c:\Users\Administrator\anaconda3\envs\RL4CO\lib\site-packages\lightning\pytorch\trainer\call.py", line 159, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "C:\research_code\rl4co-main\rl4co\models\rl\common\base.py", line 147, in setup
+    self.env.dataset(self.data_cfg["train_data_size"], phase="train")
+  File "C:\research_code\rl4co-main\rl4co\envs\common\base.py", line 246, in dataset
+    td = self.generator(batch_size)
+  File "C:\research_code\rl4co-main\rl4co\envs\common\utils.py", line 19, in __call__
+    return self._generate(batch_size)
+  File "D:\rl4ev\generator\generator.py", line 134, in _generate
+    self.distance_matrix = torch.zeros(batch_size, self.num_bus_stops, self.num_bus_stops)
+TypeError: zeros() received an invalid combination of arguments - got (list, int, int), but expected one of:
+ * (tuple of ints size, *, tuple of names names, torch.dtype dtype = None, torch.layout layout = None, torch.device device = None, bool pin_memory = False, bool requires_grad = False)
+ * (tuple of ints size, *, Tensor out = None, torch.dtype dtype = None, torch.layout layout = None, torch.device device = None, bool pin_memory = False, bool requires_grad = False)

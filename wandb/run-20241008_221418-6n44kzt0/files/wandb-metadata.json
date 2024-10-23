@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-10-08T14:14:20.442214",
+    "startedAt": "2024-10-08T14:14:18.889075",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "D:\\rl4ev\\train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "host": "CHINAMI-2CC6H5T",
+    "username": "Administrator",
+    "executable": "c:\\Users\\Administrator\\anaconda3\\envs\\RL4CO\\python.exe",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2100.0,
+        "min": 0.0,
+        "max": 2100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 2100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 953.8369140625,
+            "used": 35.138916015625
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4060 Ti",
+            "memory_total": 8585740288
+        }
+    ],
+    "memory": {
+        "total": 15.674217224121094
+    }
+}

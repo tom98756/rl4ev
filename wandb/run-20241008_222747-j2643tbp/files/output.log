@@ -1,0 +1,6 @@
+val_file not set. Generating dataset instead
+test_file not set. Generating dataset instead
+c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydev_ipython\matplotlibtools.py:55: MatplotlibDeprecationWarning: The interactive_bk attribute was deprecated in Matplotlib 3.9 and will be removed in 3.11. Use ``matplotlib.backends.backend_registry.list_builtin(matplotlib.backends.BackendFilter.INTERACTIVE)`` instead.
+  from matplotlib.rcsetup import interactive_bk, non_interactive_bk  # @UnresolvedImport
+c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydev_ipython\matplotlibtools.py:55: MatplotlibDeprecationWarning: The non_interactive_bk attribute was deprecated in Matplotlib 3.9 and will be removed in 3.11. Use ``matplotlib.backends.backend_registry.list_builtin(matplotlib.backends.BackendFilter.NON_INTERACTIVE)`` instead.
+  from matplotlib.rcsetup import interactive_bk, non_interactive_bk  # @UnresolvedImport

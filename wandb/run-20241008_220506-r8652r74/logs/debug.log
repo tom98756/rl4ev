@@ -1,0 +1,29 @@
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_setup.py:_flush():76] Current SDK version is 0.17.5
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_setup.py:_flush():76] Configure stats pid to 22932
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Administrator\.config\wandb\settings
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_setup.py:_flush():76] Loading settings from D:\rl4ev\wandb\settings
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': 'D:\\rl4ev\\train.py', 'program': 'D:\\rl4ev\\train.py'}
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-10-08 22:05:06,450 INFO    MainThread:22932 [wandb_init.py:_log_setup():529] Logging user logs to .\wandb\run-20241008_220506-r8652r74\logs\debug.log
+2024-10-08 22:05:06,451 INFO    MainThread:22932 [wandb_init.py:_log_setup():530] Logging internal logs to .\wandb\run-20241008_220506-r8652r74\logs\debug-internal.log
+2024-10-08 22:05:06,451 INFO    MainThread:22932 [wandb_init.py:init():569] calling init triggers
+2024-10-08 22:05:06,451 INFO    MainThread:22932 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-10-08 22:05:06,451 INFO    MainThread:22932 [wandb_init.py:init():619] starting backend
+2024-10-08 22:05:06,451 INFO    MainThread:22932 [wandb_init.py:init():623] setting up manager
+2024-10-08 22:05:06,453 INFO    MainThread:22932 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-10-08 22:05:06,457 INFO    MainThread:22932 [wandb_init.py:init():631] backend started and connected
+2024-10-08 22:05:06,461 INFO    MainThread:22932 [wandb_init.py:init():720] updated telemetry
+2024-10-08 22:05:06,462 INFO    MainThread:22932 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-10-08 22:05:07,477 INFO    MainThread:22932 [wandb_run.py:_on_init():2435] communicating current version
+2024-10-08 22:05:07,901 INFO    MainThread:22932 [wandb_run.py:_on_init():2444] got version response upgrade_message: "wandb version 0.18.3 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-10-08 22:05:07,902 INFO    MainThread:22932 [wandb_init.py:init():804] starting run threads in backend
+2024-10-08 22:05:08,317 INFO    MainThread:22932 [wandb_run.py:_console_start():2413] atexit reg
+2024-10-08 22:05:08,318 INFO    MainThread:22932 [wandb_run.py:_redirect():2255] redirect: wrap_raw
+2024-10-08 22:05:08,318 INFO    MainThread:22932 [wandb_run.py:_redirect():2320] Wrapping output streams.
+2024-10-08 22:05:08,318 INFO    MainThread:22932 [wandb_run.py:_redirect():2345] Redirects installed.
+2024-10-08 22:05:08,320 INFO    MainThread:22932 [wandb_init.py:init():847] run started, returning control to user process
+2024-10-08 22:05:10,225 INFO    MainThread:22932 [wandb_run.py:_config_callback():1382] config_cb None None {'batch_size': 512, 'val_batch_size': None, 'test_batch_size': None, 'train_data_size': 1000, 'val_data_size': 100, 'test_data_size': 10000, 'optimizer': 'Adam', 'optimizer_kwargs': {'lr': 0.0001}, 'lr_scheduler': None, 'lr_scheduler_kwargs': {'milestones': [80, 95], 'gamma': 0.1}, 'lr_scheduler_interval': 'epoch', 'lr_scheduler_monitor': 'val/reward', 'generate_default_data': False, 'shuffle_train_dataloader': False, 'dataloader_num_workers': 2, 'data_dir': 'data/', 'log_on_step': True, 'metrics': {}, 'baseline': 'rollout', 'baseline_kwargs': {}, 'reward_scale': None, 'policy_kwargs': {}}

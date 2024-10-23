@@ -1,0 +1,35 @@
+val_file not set. Generating dataset instead
+test_file not set. Generating dataset instead
+C:\research_code\rl4co-main\rl4co\models\nn\attention.py:128: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:555.)
+  out = self.sdpa_fn(
+c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydev_ipython\matplotlibtools.py:55: MatplotlibDeprecationWarning: The interactive_bk attribute was deprecated in Matplotlib 3.9 and will be removed in 3.11. Use ``matplotlib.backends.backend_registry.list_builtin(matplotlib.backends.BackendFilter.INTERACTIVE)`` instead.
+  from matplotlib.rcsetup import interactive_bk, non_interactive_bk  # @UnresolvedImport
+c:\Users\Administrator\.cursor\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydev_ipython\matplotlibtools.py:55: MatplotlibDeprecationWarning: The non_interactive_bk attribute was deprecated in Matplotlib 3.9 and will be removed in 3.11. Use ``matplotlib.backends.backend_registry.list_builtin(matplotlib.backends.BackendFilter.NON_INTERACTIVE)`` instead.
+  from matplotlib.rcsetup import interactive_bk, non_interactive_bk  # @UnresolvedImport
+Backend tkagg is interactive backend. Turning interactive mode on.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+┏━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━┓
+┃[1m    [22m┃[1m Name                                   [22m┃[1m Type                  [22m┃[1m Params [22m┃[1m Mode  [22m┃
+┡━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━┩
+│ 0  │ env                                    │ EVREnv                │      0 │ train │
+│ 1  │ policy                                 │ Policy                │  710 K │ train │
+│ 2  │ policy.encoder                         │ Encoder               │  595 K │ train │
+│ 3  │ policy.encoder.init_embedding          │ EVRInitEmbedding      │    896 │ train │
+│ 4  │ policy.encoder.net                     │ GraphAttentionNetwork │  594 K │ train │
+│ 5  │ policy.decoder                         │ Decoder               │  114 K │ train │
+│ 6  │ policy.decoder.context_embedding       │ TSPContext            │ 33.0 K │ train │
+│ 7  │ policy.decoder.dynamic_embedding       │ StaticEmbedding       │      0 │ train │
+│ 8  │ policy.decoder.pointer                 │ PointerAttention      │ 16.4 K │ train │
+│ 9  │ policy.decoder.project_node_embeddings │ Linear                │ 49.2 K │ train │
+│ 10 │ policy.decoder.project_fixed_context   │ Linear                │ 16.4 K │ train │
+│ 11 │ baseline                               │ WarmupBaseline        │  710 K │ train │
+│ 12 │ baseline.baseline                      │ RolloutBaseline       │  710 K │ train │
+│ 13 │ baseline.baseline.policy               │ Policy                │  710 K │ eval  │
+│ 14 │ baseline.warmup_baseline               │ ExponentialBaseline   │      0 │ train │
+└────┴────────────────────────────────────────┴───────────────────────┴────────┴───────┘
+[1mTrainable params[22m: 1.4 M
+[1mNon-trainable params[22m: 0
+[1mTotal params[22m: 1.4 M
+[1mTotal estimated model params size (MB)[22m: 5
+Sanity Checking: |                                                                                                   | 0/? [00:00<?, ?it/s]
+
